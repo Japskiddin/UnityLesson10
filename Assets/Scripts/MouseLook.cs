@@ -33,7 +33,6 @@ public class MouseLook : MonoBehaviour
     {
         if (axes == RotationAxes.MouseX) {
             // это поворот в горизонтальной плоскости
-            Debug.Log("Mouse x - " + Input.GetAxis("Mouse X"));
             transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityHor, 0);
         } else if (axes == RotationAxes.MouseY) {
             // это поворот в вертикальной плоскости
